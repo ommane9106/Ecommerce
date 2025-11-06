@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Your Tech, Our Passion</title>
+  <meta name="description" content="Shop the latest tech products at amazing prices. Wireless headphones, smartwatches, and more!">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <span>🛒</span>
+        <span>TechStore</span>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" data-page="home">Home</a>
+        <a class="nav-link" data-page="shop">Shop</a>
+        <a class="nav-link cart-badge" data-page="cart">
+          🛒 Cart
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content"></main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TechStore</h3>
+        <p>Your Tech, Our Passion</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">📷</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="shop">Shop</a>
+        <a href="#" data-page="cart">Cart</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>📧 cinema@lcu.com</p>
+        <p>📞 9637419475</p>
+        <p>📞 9987333878</p>
+        <p>📍 Maharashtra Police Line</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 TechStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Payment Modal -->
+  <div class="modal" id="payment-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Processing Payment</h2>
+        <button class="close-modal" id="close-payment-modal">×</button>
+      </div>
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Securely processing your payment...</p>
+        <p style="font-size: 14px; color: #6c757d; margin-top: 8px;">This is a simulated payment for demo purposes</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
